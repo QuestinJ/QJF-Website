@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Projects - QJF Consulting</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LFHG6V36Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-4LFHG6V36Q');
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Recent Projects: See how Heber City used our sidewalk inventory data to prioritize repairs and secure funding. Interactive map demo included.">
+    <meta property="og:title" content="Recent Projects - QJF Consulting">
+    <meta property="og:description" content="Case Study: Heber City Sidewalk Inventory. See the data in action.">
+    <meta property="og:image" content="Sample Photos/extreme_high_trip_hazard.jpg">
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+            border-radius: 8px;
+            border: 2px solid var(--navy-deep);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="main_page.html" class="logo">QJF Consulting</a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="nav-links">
+                    <a href="main_page.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="projects.html" class="active">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" style="padding-bottom: 2rem;">
+            <div class="container" style="text-align: center; max-width: 800px;">
+                <h1>See The Data In Action</h1>
+                <p>We believe in transparency. Below are examples of real deliverables we have generated for municipal
+                    clients. This is the level of detail you can expect.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <!-- Project 1: Heber City -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <span class="project-location">Heber City, Utah</span>
+                            <h2>City-Wide Trip Hazard Inventory</h2>
+                        </div>
+                        <span class="project-tag">Completed 2025</span>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <h4>The Challenge</h4>
+                            <p>The city needed a systematic way to identify trip hazards to prioritize grinding and
+                                replacement projects. They required a format that could easily import into their
+                                existing
+                                GIS viewer.</p>
+
+                            <img src="Sample%20Photos/extreme_high_trip_hazard.jpg" alt="Extreme Trip Hazard"
+                                style="width: 100%; margin-top: 1rem; border-radius: 4px; border: 1px solid #ddd;"
+                                loading="lazy">
+                            <h4>The Solution</h4>
+                            <p>QJF deployed field teams to walk the designated sectors. We identified hazards,
+                                classified
+                                them by severity (Low/Medium/High), and noted specific causes such as tree roots.</p>
+
+                            <div style="margin-top: 2rem;">
+                                <strong>Deliverables:</strong>
+                                <ul class="deliverables-list">
+                                    <li>CSV Database with GPS Lat/Long</li>
+                                    <li>High-Resolution Photo Links</li>
+                                    <li>Severity & Cause Classification</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- The Visual Evidence (Based on your CSV) -->
+                        <div>
+                            <h4>Data Snapshot (Sanitized)</h4>
+                            <div class="data-preview">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>GPS Coordinates</th>
+                                            <th>Severity</th>
+                                            <th>Address</th>
+                                            <th>Evidence</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="monospace-blue">40.516, -111.417</td>
+                                            <td><span class="severity-high">High</span> (Tree Root)</td>
+                                            <td>235 W 650 N</td>
+                                            <td><a href="#" class="data-link">[JPG]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="monospace-blue">40.515, -111.416</td>
+                                            <td><span class="severity-medium">Medium</span> (Lifted Panel)</td>
+                                            <td>598 N 200 W</td>
+                                            <td><a href="#" class="data-link">[JPG]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="monospace-blue">40.505, -111.398</td>
+                                            <td>Low (Minor Settling)</td>
+                                            <td>960 E 200 S</td>
+                                            <td><a href="#" class="data-link">[JPG]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="monospace-blue">40.504, -111.397</td>
+                                            <td><span class="severity-high">High</span> (Expansion Heave)</td>
+                                            <td>234 S 1000 E</td>
+                                            <td><a href="#" class="data-link">[JPG]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="monospace-blue">40.512, -111.405</td>
+                                            <td><span class="severity-high">Extreme</span> (Severe Buckling)</td>
+                                            <td>450 S Main St</td>
+                                            <td><a href="#" class="data-link">[JPG]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="monospace-blue">40.508, -111.410</td>
+                                            <td><span class="severity-high">Severe</span> (Spalling)</td>
+                                            <td>120 E 100 S</td>
+                                            <td><a href="#" class="data-link">[JPG]</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div
+                                    style="margin-top: 1rem; font-size: 0.8rem; color: #666; font-style: italic; border-top: 1px solid #ddd; padding-top: 0.5rem;">
+                                    * Full dataset includes GIS-ready GPS coordinates compatible with ArcGIS and
+                                    CityWorks
+                                    import.
+                                </div>
+                            </div>
+
+                            <!-- Visual Map Placeholder -->
+                            <!-- Interactive Map -->
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div style="text-align: center; margin-top: 4rem;">
+                    <h3>Want to see a sample from your city?</h3>
+                    <p>We can perform a small "Pilot Audit" of a few blocks to demonstrate the value.</p>
+                    <a href="contact.html" class="btn btn-blue">Request a Pilot</a>
+                </div>
+
+            </div>
+        </section>
+
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 QJF Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

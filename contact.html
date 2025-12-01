@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - QJF Consulting</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LFHG6V36Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-4LFHG6V36Q');
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Contact QJF Consulting. Request a quote for your municipal sidewalk inventory or asset collection project.">
+    <meta property="og:title" content="Contact Us - QJF Consulting">
+    <meta property="og:description" content="Ready to get proactive with your maintenance budget? Reach out today.">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="main_page.html" class="logo">QJF Consulting</a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="nav-links">
+                    <a href="main_page.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+
+                    <!-- Left Column: Info -->
+                    <div class="info-box">
+                        <h1>Start Your Inventory</h1>
+                        <p>Ready to get proactive with your maintenance budget? Reach out directly to discuss your
+                            city's
+                            specific needs.</p>
+
+                        <div style="margin-top: 3rem;">
+                            <div class="contact-method">
+                                <div class="method-icon">✉️</div>
+                                <div>
+                                    <h3>Email Us</h3>
+                                    <p>questin@qjfconsulting.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div>
+                                    <h3>Service Area</h3>
+                                    <p>Based in Utah. Serving municipalities across the Mountain West.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Helpful Prompt -->
+                        <div class="checklist">
+                            <h3>Helpful information to include:</h3>
+                            <ul>
+                                <li>Estimated miles of sidewalk</li>
+                                <li>Target date for completion</li>
+                                <li>Current GIS system (ArcGIS, CityWorks, etc.)</li>
+                                <li>Specific known problem areas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Form -->
+                    <div class="form-box">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Municipality / Organization</label>
+                                <input type="text" name="organization" placeholder="City of Example" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" name="email" placeholder="name@city.gov" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Service Interest</label>
+                                <select name="service">
+                                    <option>Sidewalk & Trip Hazard Inventory</option>
+                                    <option>Asset Collection (Signs, Meters, etc.)</option>
+                                    <option>General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea name="message" rows="5"
+                                    placeholder="Tell us about your project timeline and scope..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Request Quote</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 QJF Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

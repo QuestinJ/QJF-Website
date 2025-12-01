@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QJF Consulting | Municipal Asset Inventories</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LFHG6V36Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-4LFHG6V36Q');
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="QJF Consulting provides GIS-ready sidewalk and trip hazard inventories to help municipalities prioritize repairs, mitigate liability, and justify budgets.">
+    <meta property="og:title" content="QJF Consulting | Municipal Asset Inventories">
+    <meta property="og:description"
+        content="Turn data into dollars. We deliver defensible documentation for your sidewalk maintenance budget.">
+    <meta property="og:image" content="Sample Photos/high_trip_hazard.jpg">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="main_page.html" class="logo">QJF Consulting</a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="nav-links">
+                    <a href="main_page.html" class="active">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="accent-bar"></div>
+                        <h1>Mitigate Liability.<br>Justify Your Budget.</h1>
+                        <p>We deliver GIS-ready sidewalk and trip hazard inventories to help municipalities prioritize
+                            repairs, reduce risk, and secure necessary funding.</p>
+
+                        <div style="margin-top: 2.5rem;">
+                            <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+                            <a href="projects.html" class="btn btn-outline">See Sample Data</a>
+                        </div>
+                    </div>
+
+                    <!-- The "Social Proof" Hook -->
+                    <div class="hero-card">
+                        <span class="card-tag">The QJF Guarantee</span>
+                        <div style="margin-top: 1rem;">
+                            <span class="stat-highlight">100%</span>
+                            <div class="stat-label">
+                                Defensible Documentation. Every hazard logged with GPS coordinates, photos, and severity
+                                ratings.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Core Value (ROI) -->
+        <section class="section roi-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <h2>Turn Data into Dollars</h2>
+                        <p>City councils rarely approve budget increases based on anecdotes. They approve them based on
+                            hard
+                            evidence.</p>
+                        <p>When municipalities have accurate maps, funding follows. <strong>We provide the precise data
+                                you
+                                need to build a case for your maintenance budget.</strong></p>
+                    </div>
+                    <div class="roi-box">
+                        <h3 class="gold-text">The Evidence Advantage</h3>
+                        <p style="font-style: italic; margin-bottom: 1rem;">
+                            "Councils don't fund problems they can't see. We put the problem on a map, rated by
+                            severity,
+                            making the funding decision obvious."
+                        </p>
+                        <div class="carousel-container">
+                            <div class="carousel-slide active">
+                                <img src="Sample%20Photos/high_trip_hazard.jpg" alt="High Severity Trip Hazard"
+                                    loading="lazy">
+                                <div class="carousel-caption">High Severity Trip Hazard</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="Sample%20Photos/extreme_high_trip_hazard.jpg"
+                                    alt="Extreme Severity Trip Hazard" loading="lazy">
+                                <div class="carousel-caption">Extreme Severity Trip Hazard</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="Sample%20Photos/medium_trip_hazard.jpg" alt="Medium Severity Trip Hazard"
+                                    loading="lazy">
+                                <div class="carousel-caption">Medium Severity Trip Hazard</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="Sample%20Photos/caused_by_tree_trip_hazrd.jpg" alt="Tree Root Damage"
+                                    loading="lazy">
+                                <div class="carousel-caption">Tree Root Damage</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="Sample%20Photos/severe_spalling_single%20_panel.jpg" alt="Severe Spalling"
+                                    loading="lazy">
+                                <div class="carousel-caption">Severe Spalling</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="Sample%20Photos/heavy_cracking_multi_panel.jpg" alt="Heavy Cracking"
+                                    loading="lazy">
+                                <div class="carousel-caption">Heavy Cracking</div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+                            <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center" style="max-width: 700px; margin: 0 auto 4rem auto;">
+                    <h2>Precision Data Collection</h2>
+                    <p>We build comprehensive datasets compatible with ArcGIS and CityWorks.</p>
+                </div>
+
+                <div class="grid-2">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="icon-placeholder">📍</div>
+                        <h3>Sidewalk Inventory</h3>
+                        <p>Systematic inspection of every sidewalk mile. We identify trip hazards, spalling, and tree
+                            root
+                            damage.</p>
+                        <ul class="checklist-style">
+                            <li>✓ Precise GPS Coordinates</li>
+                            <li>✓ High-Res Photos</li>
+                            <li>✓ Severity Grading (1-3)</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="service-card gold-top">
+                        <div class="icon-placeholder">🛠</div>
+                        <h3>Asset Collection</h3>
+                        <p>Need more than sidewalks? We can inventory signs, hydrants, and meters while we are already
+                            in
+                            the field.</p>
+                        <ul class="checklist-style">
+                            <li>✓ Sign Reflectivity Checks</li>
+                            <li>✓ Meter Readings</li>
+                            <li>✓ Custom Asset Attributes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why QJF (Recap of About Us) -->
+        <section class="section" style="background-color: var(--navy-deep); color: var(--white);">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <h2 class="white-text">Why QJF Consulting?</h2>
+                        <p class="light-text">Most engineering firms send high-cost engineers to do low-complexity data
+                            collection. We don't.</p>
+                        <p class="light-text">We use scalable field teams led by municipal data specialists. This means
+                            you
+                            get higher quality data—cleaned and formatted for your specific GIS system—without paying
+                            for
+                            overhead you don't need.</p>
+                        <a href="about_us.html" class="btn btn-gold" style="margin-top: 1rem;">Meet the Team</a>
+                    </div>
+                    <div style="text-align: center;">
+
+                        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 8px;">
+                            <h3 class="gold-text">GIS Ready</h3>
+                            <p class="white-text" style="font-size: 0.9rem;">We deliver files (CSV, Shapefile) that your
+                                IT
+                                team can import in minutes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section text-center">
+            <div class="container">
+                <h2>Start Your Inventory</h2>
+                <p>Don't wait for the next slip-and-fall claim. Get proactive.</p>
+                <a href="contact.html" class="btn btn-blue">Request a Consultation</a>
+            </div>
+        </section>
+
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 QJF Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
